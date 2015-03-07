@@ -10,4 +10,8 @@ class TipCalculator
     @tip = tip
   end
 
+  def add(person, amount)
+    @tip += amount.round(1)
+  end
+
 end
