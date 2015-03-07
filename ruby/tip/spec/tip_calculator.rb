@@ -11,7 +11,7 @@ class TipCalculator
   end
 
   def add(person, amount)
-    @tip += amount.round(1)
+    @tip += amount.round(2)
   end
 
 end

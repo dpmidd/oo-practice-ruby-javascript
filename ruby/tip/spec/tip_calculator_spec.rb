@@ -13,14 +13,14 @@ RSpec.describe TipCalculator do
 
   it "A person can add more to the tip" do
     tip = TipCalculator.new(8.88)
-    tip.add("Bill", 2.00)
+    tip.add("Bill", 0.12)
 
-    expect(tip.cost).to eq(10.88)
+    expect(tip.cost).to eq(9.00)
 
     tip2 = TipCalculator.new(17.77)
-    tip2.add("James", 2.00)
+    tip2.add("James", 0.23)
 
-    expect(tip2.cost). to eq(19.77)
+    expect(tip2.cost). to eq(18.00)
   end
 
 
